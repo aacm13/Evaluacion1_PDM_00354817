@@ -11,6 +11,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     public static final String EXTRA_USER = "tech.visuallatam.labo4movil.EXTRA_USER";
     public static final String EXTRA_MAIL = "tech.visuallatam.labo4movil.EXTRA_MAIL";
+    public static final String EXTRA_PROD = "tech.visuallatam.labo4movil.EXTRA_PROD";
+
 
     public int counterOne = 0;
     public int counterDos = 0;
@@ -136,24 +138,22 @@ public class MainActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity2();
+                EditText name = (EditText) findViewById(R.id.user);
+                String User = name.getText().toString();
+
+                EditText mail = (EditText) findViewById(R.id.email);
+                String Mail = mail.getText().toString();
+
+                int prod = counterOne+ counterDos + counterTres + counterCuatro + counterCinco + counterSeis + counterSiete + counterOcho
+                        + counterNueve;
+
+                Intent intent = new Intent(MainActivity.this, Activity2.class);
+                intent.putExtra(EXTRA_USER, User);
+                intent.putExtra(EXTRA_MAIL, Mail);
+                intent.putExtra(EXTRA_PROD, prod);
+                startActivity(intent);
             }
         });
 
-    }
-    public void openActivity2(){
-        EditText name = (EditText) findViewById(R.id.user);
-        String User = name.getText().toString();
-
-        EditText mail = (EditText) findViewById(R.id.email);
-        String Mail = mail.getText().toString();
-
-
-
-
-        Intent intent = new Intent(this, Activity2.class);
-        intent.putExtra(EXTRA_USER, User);
-        intent.putExtra(EXTRA_MAIL, Mail);
-        startActivity(intent);
     }
 }

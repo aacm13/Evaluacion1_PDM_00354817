@@ -15,11 +15,14 @@ public class Activity2 extends AppCompatActivity {
         Intent intent = getIntent();
         String user = intent.getStringExtra(MainActivity.EXTRA_USER);
         String mail = intent.getStringExtra(MainActivity.EXTRA_MAIL);
+        int prod = intent.getIntExtra(MainActivity.EXTRA_PROD, 0);
 
         TextView USER = (TextView) findViewById(R.id.mail);
         TextView MAIL = (TextView) findViewById(R.id.user);
+        TextView PROD = (TextView) findViewById(R.id.prod);
 
         USER.setText("User: " + user);
         MAIL.setText("Mail: " + mail);
+        PROD.setText("# Productos: " + prod);
     }
 }
