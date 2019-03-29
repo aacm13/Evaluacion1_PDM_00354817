@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterOne ++;
-                Uno.setText("Producto 1: " + Integer.toString(counterOne));
+                Uno.setText("Producto1: " + Integer.toString(counterOne));
             }
         });
 
@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterDos ++;
-                Dos.setText("Producto 2: " + Integer.toString(counterDos));
+                Dos.setText("Producto2: " + Integer.toString(counterDos));
             }
         });
         Tres.setOnClickListener(new View.OnClickListener(){
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterTres ++;
-                Tres.setText("Producto 3: " + Integer.toString(counterTres));
+                Tres.setText("Producto3: " + Integer.toString(counterTres));
             }
         });
         Cuatro.setOnClickListener(new View.OnClickListener(){
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterCuatro ++;
-                Cuatro.setText("Producto 4: " + Integer.toString(counterCuatro));
+                Cuatro.setText("Producto4: " + Integer.toString(counterCuatro));
             }
         });
         Cinco.setOnClickListener(new View.OnClickListener(){
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterCinco ++;
-                Cinco.setText("Producto 5: " + Integer.toString(counterCinco));
+                Cinco.setText("Producto5: " + Integer.toString(counterCinco));
             }
         });
         Seis.setOnClickListener(new View.OnClickListener(){
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterSeis ++;
-                Seis.setText("Producto 6: " + Integer.toString(counterSeis));
+                Seis.setText("Producto6: " + Integer.toString(counterSeis));
             }
         });
         Siete.setOnClickListener(new View.OnClickListener(){
@@ -106,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterSiete ++;
-                Siete.setText("Producto 7: " + Integer.toString(counterSiete));
+                Siete.setText("Producto7: " + Integer.toString(counterSiete));
             }
         });
         Ocho.setOnClickListener(new View.OnClickListener(){
@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterOcho ++;
-                Ocho.setText("Producto 8: " + Integer.toString(counterOcho));
+                Ocho.setText("Producto8: " + Integer.toString(counterOcho));
             }
         });
         Nueve.setOnClickListener(new View.OnClickListener(){
@@ -122,16 +122,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 counterNueve ++;
-                Nueve.setText("Producto 9: " + Integer.toString(counterNueve));
+                Nueve.setText("Producto9: " + Integer.toString(counterNueve));
             }
         });
 
-        send.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-                
-            }
-        });
     }
 }
