@@ -6,157 +6,178 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/reminder" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+    <LinearLayout
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
+
         <TextView
-            android:id="@+id/name"
-            android:layout_width="fill_parent"
+            android:id="@+id/uno"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="@string/reminder" />
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod1" />
 
-        <LinearLayout
-            android:id="@+id/row1"
-            android:gravity="center"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/dos"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/name"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:paddingBottom="10dp"
-            android:orientation="horizontal">
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod2" />
 
-            <TextView
-                android:id="@+id/uno"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod1" />
-
-            <TextView
-                android:id="@+id/dos"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod2" />
-
-            <TextView
-                android:id="@+id/tres"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:text="@string/prod3" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/row2"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tres"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/row1"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:paddingBottom="10dp"
-            android:orientation="horizontal">
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod3" />
 
-            <TextView
-                android:id="@+id/cuatro"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod4" />
+    </LinearLayout>
 
-            <TextView
-                android:id="@+id/cinco"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod5" />
+    <LinearLayout
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
-            <TextView
-                android:id="@+id/seis"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:text="@string/prod6" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/row3"
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/cuatro"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/row2"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentLeft="true"
-            android:orientation="horizontal">
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod4" />
 
-            <TextView
-                android:id="@+id/siete"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod7" />
+        <TextView
+            android:id="@+id/cinco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod5" />
 
-            <TextView
-                android:id="@+id/ocho"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:layout_marginRight="10dp"
-                android:text="@string/prod8" />
+        <TextView
+            android:id="@+id/seis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod6" />
 
-            <TextView
-                android:id="@+id/nueve"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="#66cc99"
-                android:height="70dp"
-                android:width="70dp"
-                android:text="@string/prod8" />
+    </LinearLayout>
 
-        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/row2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/siete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod7" />
+
+        <TextView
+            android:id="@+id/ocho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod8" />
+
+        <TextView
+            android:id="@+id/nueve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:width="90dp"
+            android:height="90dp"
+            android:background="#66cc99"
+            android:text="@string/prod8" />
+
+    </LinearLayout>
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="left"
-        android:text="Usuario"/>
+        android:textSize="17dp"
+        android:text="Usuario" />
+
     <EditText
         android:id="@+id/user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe usuario aqui"/>
+        android:hint="Escribe usuario aqui" />
+
     <TextView
-        android:gravity="left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Correo Electronico"/>
+        android:gravity="left"
+        android:textSize="17dp"
+        android:text="Correo Electronico" />
+
     <EditText
         android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Escribe el Correo de usuario aqui"/>
+        android:hint="Escribe el Correo de usuario aqui" />
+
     <Button
         android:id="@+id/send"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ENVIAR"/>
+        android:text="ENVIAR" />
 </LinearLayout>

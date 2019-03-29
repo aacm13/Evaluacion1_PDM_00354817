@@ -1,21 +1,28 @@
 package tech.visuallatam.labo4movil;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private int counterOne = 0;
-    private int counterDos = 0;
-    private int counterTres = 0;
-    private int counterCuatro = 0;
-    private int counterCinco = 0;
-    private int counterSeis = 0;
-    private int counterSiete = 0;
-    private int counterOcho = 0;
-    private int counterNueve = 0;
+    public static final String EXTRA_USER = "tech.visuallatam.labo4movil.EXTRA_USER";
+    public static final String EXTRA_MAIL = "tech.visuallatam.labo4movil.EXTRA_MAIL";
+
+    public int counterOne = 0;
+    public int counterDos = 0;
+    public int counterTres = 0;
+    public int counterCuatro = 0;
+    public int counterCinco = 0;
+    public int counterSeis = 0;
+    public int counterSiete = 0;
+    public int counterOcho = 0;
+    public int counterNueve = 0;
+
+    private int TotalCounter= 0;
 
     TextView Uno;
     TextView Dos;
@@ -126,6 +133,27 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        send.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity2();
+            }
+        });
 
+    }
+    public void openActivity2(){
+        EditText name = (EditText) findViewById(R.id.user);
+        String User = name.getText().toString();
+
+        EditText mail = (EditText) findViewById(R.id.email);
+        String Mail = mail.getText().toString();
+
+
+
+
+        Intent intent = new Intent(this, Activity2.class);
+        intent.putExtra(EXTRA_USER, User);
+        intent.putExtra(EXTRA_MAIL, Mail);
+        startActivity(intent);
     }
 }
