@@ -141,6 +141,7 @@
         android:gravity="left"
         android:text="Usuario"/>
     <EditText
+        android:id="@+id/user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Escribe usuario aqui"/>
@@ -150,7 +151,13 @@
         android:layout_height="wrap_content"
         android:text="Correo Electronico"/>
     <EditText
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Escribe el Correo de usuario aqui"/>
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"/>
 </LinearLayout>
