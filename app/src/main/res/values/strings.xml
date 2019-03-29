@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Labo4Movil</string>
+    <string name="action_settings">Settings</string>
+    <string name="reminder">Contador de Productos</string>
+    <string name="prod1">Producto1</string>
+    <string name="prod2">Producto2</string>
+    <string name="prod3">Producto3</string>
+    <string name="prod4">Producto4</string>
+    <string name="prod5">Producto5</string>
+    <string name="prod6">Producto6</string>
+    <string name="prod7">Producto7</string>
+    <string name="prod8">Producto8</string>
+    <string name="prod9">Producto9</string>
 </resources>
