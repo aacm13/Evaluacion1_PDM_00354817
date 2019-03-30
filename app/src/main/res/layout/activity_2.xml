@@ -9,10 +9,18 @@
     android:layout_marginLeft="10dp"
     tools:context=".Activity2">
     <TextView
+        android:id="@+id/factura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Factura"/>
+    <TextView
         android:id="@+id/user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20dp"
+        android:layout_below="@+id/factura"
         android:text="User: " />
     <TextView
         android:id="@+id/mail"
@@ -28,12 +36,22 @@
         android:textSize="20dp"
         android:layout_below="@id/mail"
         android:text="# Productos: " />
+    <TextView
+        android:id="@+id/det"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/prod"
+        android:text="Detalles de Prodcutos"/>
     <LinearLayout
         android:id="@+id/grid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_below="@id/prod"
+        android:layout_below="@id/det"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center">
         <LinearLayout
