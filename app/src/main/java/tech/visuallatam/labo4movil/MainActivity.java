@@ -144,8 +144,9 @@ public class MainActivity extends AppCompatActivity {
                 EditText mail = (EditText) findViewById(R.id.email);
                 String Mail = mail.getText().toString();
 
-                int prod = counterOne+ counterDos + counterTres + counterCuatro + counterCinco + counterSeis + counterSiete + counterOcho
-                        + counterNueve;
+                String prod=Integer.toString(counterOne) + Integer.toString(counterDos) +Integer.toString(counterTres) +Integer.toString(counterCuatro)
+                        +Integer.toString(counterCinco) + Integer.toString(counterSeis) + Integer.toString(counterSiete) +
+                        Integer.toString(counterOcho) +  Integer.toString(counterNueve);
 
                 Intent intent = new Intent(MainActivity.this, Activity2.class);
                 intent.putExtra(EXTRA_USER, User);
